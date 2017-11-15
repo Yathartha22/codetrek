@@ -8,7 +8,6 @@
     die();
   }
 ?>
-
 <?php include('headerhost.php'); ?>
 <div class="container">
 <?php
@@ -26,9 +25,9 @@
 	if ($conn->connect_error) {
 	  die("Connection failed: " . $conn->connect_error);
 	}
-	$sql = "UPDATE allrequests SET status= '1' WHERE name= '$value' ";
+	$sql = "UPDATE allrequests SET status= '1' WHERE email= '$value' ";
 	if ($conn->query($sql) === TRUE) {
-	echo header("Location: http://soriee.dev/dashboard.php");
+	header("Location: http://soriee.dev/dashboard.php");
 	} else {
 	echo "Error updating record: " . $conn->error;
 	}

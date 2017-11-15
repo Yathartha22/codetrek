@@ -27,7 +27,7 @@
 		die();
 	}
 
-	$sql =  "INSERT INTO allrequests (name, email, phone_no, city, gender) VALUES ('$name', '$email', '$phone_no', '$city', 'gender') ";
+	$sql =  "INSERT INTO allrequests (name, email, phone_no, city, gender) VALUES ('$name', '$email', '$phone_no', '$city', '$gender') ";
 
 	if ($conn->query($sql) === TRUE) {
 	} else {

@@ -25,7 +25,7 @@
 	if ($conn->connect_error) {
 	  die("Connection failed: " . $conn->connect_error);
 	}
-	$sql = "UPDATE allrequests SET status= '0' WHERE name= '$value' ";
+	$sql = "UPDATE allrequests SET status= '0' WHERE email= '$value' ";
 	if ($conn->query($sql) === TRUE) {
 	echo header("Location: http://soriee.dev/dashboard.php");
 	} else {

@@ -66,12 +66,12 @@
           else{ ?>
           <div style="float:left;">
           <form method="POST" action="acceptstatus.php">
-          <button type="submit" name="sub" class="btn btn-success" value=<?php echo $row['name']; ?> >Accept</button>
+          <button type="submit" name="sub" class="btn btn-success" value=<?php echo $row['email']; ?> >Accept</button>
           </form>
         </div>
         <div style="float:right; margin-left:-80px;">
           <form method="POST" action="declinestatus.php">
-          <button type="submit" name="sub" class="btn btn-danger" value= <?php echo $row['name']; ?> >Decline</button>
+          <button type="submit" name="sub" class="btn btn-danger" value= <?php echo $row['email']; ?> >Decline</button>
           </form>
         </div>
         <?php
